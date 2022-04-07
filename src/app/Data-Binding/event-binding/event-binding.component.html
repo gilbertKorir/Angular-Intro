@@ -1,0 +1,6 @@
+<p>event-binding works!</p>
+<p>No of button clicks: {{ clicks }}</p>
+<button class="btn btn-info" (click)="Clickedbutton()">Count Me</button>
+<p>The Input Text: {{ myText }}</p>
+<!-- <input type="text"> -->
+<input (input)="showData($event)" /> 
