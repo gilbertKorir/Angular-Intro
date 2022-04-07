@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interpolate.component.css']
 })
 export class InterpolateComponent implements OnInit {
-
+detailsPerson = {name:'Gilbert', age: '25', school:'Moringa school', course:'Fullstack'}
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
