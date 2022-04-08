@@ -1,0 +1,19 @@
+<p>structural-directive works!</p>
+<h4>is my Element, hidden: {{showElement}}</h4>
+<button class="btn btn-danger" (click)="toggleElement(123)">Hide-show</button>
+
+<p>Show this all the time</p>
+<div *ngIf="show"><p>Show this only if "show" is true</p></div>
+<!-- 
+<ng-template #someElement>
+<div>
+    <h4>only one should be shown</h4>
+</div>
+</ng-template> -->
+<h4>The github users</h4>
+<div *ngFor="let user of gituser; index as i">
+    <div><img src="{{user.avatar_url}}" alt=""></div>
+    <p>{{user.login}}</p>
+
+</div>
+

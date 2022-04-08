@@ -10,5 +10,10 @@ detailsPerson = {name:'Gilbert', age: '25', school:'Moringa school', course:'Ful
   constructor() { }
 
   ngOnInit(): void {}
-
+  cars = ['volvo','subaru','Range Rover']
+  carIlike(){
+    return this.cars[2];
+  }
+  isSingle = true;
+  
 }
