@@ -10,6 +10,11 @@ import { InterpolateComponent } from './Data-Binding/interpolate/interpolate.com
 import { TwoWayBindingComponent } from './Data-Binding/two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './Directives/structural-directive/structural-directive.component';
+import { NavbarComponent } from './Shopping-list/navbar/navbar.component';
+import { CoverComponent } from './Shopping-list/cover/cover.component';
+import { CardComponent } from './Shopping-list/card/card.component';
+import { AddItemComponent } from './Shopping-list/add-item/add-item.component';
+import { CardViewComponent } from './Shopping-list/card-view/card-view.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { StructuralDirectiveComponent } from './Directives/structural-directive/
     InterpolateComponent,
     TwoWayBindingComponent,
     StructuralDirectiveComponent,
+    NavbarComponent,
+    CoverComponent,
+    CardComponent,
+    AddItemComponent,
+    CardViewComponent,
 
   ],
   imports: [

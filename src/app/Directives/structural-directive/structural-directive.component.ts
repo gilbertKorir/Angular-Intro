@@ -84,6 +84,9 @@ show:boolean = true;
     // this.someElement
     
   }
+  showme:boolean = true;
+  showagain:boolean = false;
+  showmethen:boolean = true;
 
   ngOnInit(): void {
   }

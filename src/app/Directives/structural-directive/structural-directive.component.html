@@ -10,6 +10,41 @@
     <h4>only one should be shown</h4>
 </div>
 </ng-template> -->
+<hr>
+<p>ngIf else directive. The *ngIf directive is most commonly used to conditionally show an inline template, as seen in the following example. 
+    The default else template is blank.</p>
+    
+<div *ngIf = "showme">
+<p>I will be available if this is true</p>
+</div>
+<hr>
+<p>ngIf else renders when the condition is true and the ng-template is shown when false</p>
+
+<div *ngIf="showagain; else pass1, pass2">
+    i am div and i am rendered because the condition is true.
+</div>
+<ng-template #pass1>
+<p> i am ng-template and i am shown because the condition is false</p>
+</ng-template>
+<hr><br>
+<p>ngIf then</p>
+<div *ngIf="showmethen; then thentrue, thenfalse"></div>
+<ng-template #thentrue>
+<p>i am rendered because i am true and my friend is false</p>
+</ng-template>
+<ng-template #thenfalse>
+    <p>i am rendered because i am false and my friend is true</p>
+    </ng-template>
+
+<hr>
+<p>ngStyle The NgStyle directive lets you set a given DOM elements style properties.</p>
+<div [ngStyle]="{'backround-color' : 'red'}">
+This div is styled with ngStyle given background color red and a 
+    height of 50px
+</div>
+<hr>
+    
+
 <h4>The github users manual</h4>
 <div *ngFor="let user of gituser; index as i">
     <div><img src="{{user.avatar_url}}" alt=""></div>
